@@ -1,0 +1,72 @@
+@import "../../assets/styles/variables.scss";
+
+.date_range_picker{
+  align-items: center;
+  height: 2.375rem;
+  min-height: 2.375rem;
+  z-index: 999;
+
+  :global(.react-daterange-picker__wrapper) {
+    border: 1px solid #d2d3d4;
+    box-shadow: 0px 2px 3px 0px #0c15230a;
+    border-radius: 0.375rem;
+    padding: 0 0.875rem 0 2.875rem;
+    align-items: center;
+    gap: 0.5rem;
+    height: 100%;
+  }
+
+  :global(.react-daterange-picker__calendar-button) {
+    padding: 0;
+    position: absolute;
+    left: 1.0856rem;
+    svg {
+      fill: #757676;
+      width: 1.0781rem;
+      height: 1.195rem;
+    }
+  }
+
+  :global(.react-daterange-picker__clear-button) {
+    padding: 0;
+    svg {
+      stroke: #757676;
+      width: 1.0781rem;
+      height: 1.195rem;
+    }
+  }
+
+  :global(.react-daterange-picker__inputGroup) {
+    height: fit-content;
+    min-width: 4.5rem;
+  }
+
+  :global(.react-daterange-picker__inputGroup__input),
+  :global(.react-daterange-picker__inputGroup__leadingZero),
+  :global(.react-date-picker__inputGroup__divider),
+  :global(.react-daterange-picker__range-divider) {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 16.24px;
+    color: $text-main;
+
+    &:focus-visible {
+      outline: none !important;
+    }
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 16.24px;
+    }
+  }
+
+  :global(.react-calendar) {
+    background: $white;
+    box-shadow: 0px 2px 10px 0px #00000040;
+    border-radius: 0.3125rem;
+    border: unset !important;
+    margin-top: 0.5rem;
+    overflow: hidden;
+  }
+}

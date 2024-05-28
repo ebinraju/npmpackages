@@ -1,0 +1,27 @@
+.table_custom {
+  td {
+    padding: 10px 20px !important;
+  }
+
+  table tr:nth-child(4n-3),
+  table tr:nth-child(4n-2) {
+    td {
+      background-color: #fff; /* Background color for first two rows */
+    }
+  }
+
+  /* Next two rows */
+  table tr:nth-child(4n-1),
+  table tr:nth-child(4n) {
+    td {
+      background-color: #e9eaf3; /* Background color for next two rows */
+    }
+  }
+
+  table tr:nth-child(odd) td:first-child,
+  table tr:nth-child(even) + tr td:first-child {
+    /* Styles for odd and even rows in the first column */
+    /* Example: */
+    border-right: 1px solid #d2d3d4;
+  }
+}

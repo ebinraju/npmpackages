@@ -1,0 +1,45 @@
+@import "../../assets/styles/variables.scss";
+
+.overlay {
+  background: #00000040;
+}
+
+.modal {
+  width: fit-content;
+  min-width: min(800px, calc(100vw - 8.75rem));
+  max-width: calc(100vw - 8.75rem);
+  box-shadow: 0px 2px 10px 0px #00000040;
+  border-radius: 0.9375rem;
+  padding: 1.25rem;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.0625rem;
+  gap: 1rem;
+
+  .title {
+    @include font-mulish;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.2769rem;
+    flex-grow: 1;
+  }
+
+  .close_icon {
+    cursor: pointer;
+    flex-shrink: 0;
+
+    svg {
+      width: 0.875rem;
+      height: 0.875rem;
+      fill: $text;
+    }
+  }
+}

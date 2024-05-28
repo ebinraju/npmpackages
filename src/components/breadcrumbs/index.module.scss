@@ -1,0 +1,29 @@
+@import "../../assets/styles/variables.scss";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.8125rem;
+}
+
+.devider {
+  fill: $text-main;
+  flex-shrink: 0;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.3619rem;
+  color: $text-main;
+  cursor: pointer;
+
+  &:last-child:not(:first-child) {
+    color: $primary;
+    cursor: default;
+  }
+
+  &:last-child:is(:first-child) {
+    cursor: default;
+  }
+}

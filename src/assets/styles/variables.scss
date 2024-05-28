@@ -1,0 +1,39 @@
+$primary: #00afef;
+$primary-border: #008ec2;
+$primary-900: #333869;
+
+$secondary-900: #565fbb;
+
+$gray: #44494d;
+$gray-50: #44494d80;
+$gray-500: #4a4a4a;
+
+$gray-light: #d3dee5;
+$gray-dark: #999da0;
+
+$white: #fff;
+$white-bg: #f2f4f5;
+$white-border: #d3dee5;
+
+$green: #00cd83;
+$green-bg: #00cd831a;
+
+$yellow: #f4ab1d;
+$yellow-bg: #f4ab1d1a;
+
+$red: #ff4c4c;
+$red-bg: #ff4c4c1a;
+
+$purple: #9a01f3;
+$purple-bg: #9a01f31a;
+
+$text: #172126;
+$text-main: #252526;
+
+@mixin font-mulish {
+  font-family: "Mulish", sans-serif;
+}
+
+@mixin transition($property...) {
+  transition: $property 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}

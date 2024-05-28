@@ -1,0 +1,44 @@
+$fonts:
+  800 "normal" "../font/Mulish-ExtraBold.ttf",
+  700 "normal" "../font/Mulish-Bold.ttf",
+  600 "normal" "../font/Mulish-SemiBold.ttf",
+  500 "normal" "../font/Mulish-Medium.ttf",
+  400 "normal" "../font/Mulish-Regular.ttf",
+  300 "normal" "../font/Mulish-Light.ttf",
+  200 "normal" "../font/Mulish-ExtraLight.ttf",
+  100 "normal" "../font/Mulish-Thin.ttf";
+
+@each $weight, $style, $url in $fonts {
+  @font-face {
+    font-family: "Mulish";
+    src: url($url);
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+* {
+  font-family: "Mulish", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 100vmax;
+  border-radius: 100vmax;
+  background: #cecece;
+  border: 4px solid #ffffff00;
+  background-clip: padding-box;
+
+  &:hover {
+    background-color: #838383;
+  }
+}

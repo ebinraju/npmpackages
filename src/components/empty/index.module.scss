@@ -1,0 +1,17 @@
+@import "../../assets/styles/variables.scss";
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 0.25rem;
+  color: $gray-50;
+  font-size: 0.875rem;
+  font-weight: 600;
+
+  svg {
+    height: 7rem;
+  }
+}
